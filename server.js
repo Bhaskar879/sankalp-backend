@@ -214,6 +214,9 @@ app.get("/history", (req, res) => {
 
 
 // ******* SERVER CONFIGUARATION ***********
+app.get("/", (req, res) => {
+  res.send("Server is running ");
+});
 
 app.listen(process.env.PORT, () => {
   console.log(`server started on port ${process.env.PORT}`);
